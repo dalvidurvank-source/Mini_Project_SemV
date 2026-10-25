@@ -1,0 +1,50 @@
+source_location_id,source_location_name,destination_location_id,destination_location_name,road_distance_km,estimated_travel_time_minutes,routing_provider,retrieval_timestamp_utc,status
+HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,0.000,0.00,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),0.522,2.06,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,HUB_MARKET_YARD_NASHIK,Market Yard Nashik,2.781,5.24,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,4.809,5.71,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),30.880,24.82,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",172.499,130.98,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,189.643,134.83,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,0.840,1.95,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),0.000,0.00,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),HUB_MARKET_YARD_NASHIK,Market Yard Nashik,2.929,4.87,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,4.698,5.80,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),30.768,24.92,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",171.952,130.49,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,190.679,134.83,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_MARKET_YARD_NASHIK,Market Yard Nashik,HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,3.314,5.30,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_MARKET_YARD_NASHIK,Market Yard Nashik,HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),2.911,5.07,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_MARKET_YARD_NASHIK,Market Yard Nashik,HUB_MARKET_YARD_NASHIK,Market Yard Nashik,0.000,0.00,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_MARKET_YARD_NASHIK,Market Yard Nashik,HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,5.330,7.82,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_MARKET_YARD_NASHIK,Market Yard Nashik,HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),31.400,27.08,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_MARKET_YARD_NASHIK,Market Yard Nashik,FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",174.143,133.61,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_MARKET_YARD_NASHIK,Market Yard Nashik,BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,192.869,137.95,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,4.864,5.71,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),4.735,5.92,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,HUB_MARKET_YARD_NASHIK,Market Yard Nashik,5.323,7.54,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,0.000,0.00,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),28.017,22.40,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",176.084,133.63,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,187.374,133.15,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,29.264,24.18,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),29.135,24.38,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),HUB_MARKET_YARD_NASHIK,Market Yard Nashik,29.723,26.16,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,26.272,21.79,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),0.000,0.00,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",198.948,149.80,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,168.491,139.08,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,172.156,130.23,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),171.752,130.00,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",HUB_MARKET_YARD_NASHIK,Market Yard Nashik,173.907,132.92,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,175.907,132.94,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),200.520,149.75,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",0.000,0.00,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,338.484,246.61,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,190.949,135.74,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),191.936,135.62,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,HUB_MARKET_YARD_NASHIK,Market Yard Nashik,194.091,138.55,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,189.502,134.02,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),168.653,139.50,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",342.871,248.44,OSRM Table API,2026-10-22T06:25:29.833500Z,ok
+BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,0.000,0.00,OSRM Table API,2026-10-22T06:25:29.833500Z,ok

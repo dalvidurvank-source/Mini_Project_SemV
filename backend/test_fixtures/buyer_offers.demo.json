@@ -1,0 +1,5 @@
+[
+  {"id":"demo-nasik-yard","name":"Demo buyer - Nashik market yard","location_id":"HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI","crop":"Tomato","demo":true,"description":"TEST FIXTURE: illustrative terms, not a real buyer offer.","offer":{"kind":"demo_offer","price_inr_per_kg":20,"max_quantity_kg":2000,"min_quantity_kg":1,"partial_sales_supported":true,"selling_charges":[{"label":"Demo market service fee","type":"fixed","value":100}]}},
+  {"id":"demo-pimpalgaon","name":"Demo buyer - Pimpalgaon","location_id":"HUB_PIMPALGAON_BASWANT_APMC_OLD","crop":"Tomato","demo":true,"description":"TEST FIXTURE: illustrative terms, not a real buyer offer.","offer":{"kind":"demo_offer","price_inr_per_kg":23,"max_quantity_kg":1000,"min_quantity_kg":1,"partial_sales_supported":true,"selling_charges":[{"label":"Demo market service fee","type":"fixed","value":50}]}},
+  {"id":"demo-sambhajinagar","name":"Demo buyer - Chhatrapati Sambhajinagar","location_id":"BUYER_TEST_CHH_SAMBHAJINAGAR","crop":"Tomato","demo":true,"description":"Test destination with no offer or confirmed purchase capacity."}
+]

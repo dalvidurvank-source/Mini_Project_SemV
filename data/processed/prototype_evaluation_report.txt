@@ -1,0 +1,85 @@
+AgroLink Prototype Evaluation Report
+====================================
+
+Scope and prototype labels
+--------------------------
+FARMER_TEST_SPIT is Sardar Patel Institute of Technology (SPIT), Mumbai,
+a temporary prototype origin rather than a verified tomato farm in Nashik.
+BUYER_TEST_CHH_SAMBHAJINAGAR is a temporary city-centre test destination.
+OSRM durations are route estimates, not verified observed travel times.
+
+1. Dataset and routing coverage
+--------------------------------
+Locations in prototype buyer matrix: 7
+Candidate hubs in feasibility report: 5
+All ordered matrix entries (including same-location pairs):
+  total ordered entries: 49
+  same-location pairs: 7
+  distinct-location pairs: 42
+  successful: 49 (100.00%)
+  unavailable: 0 (0.00%)
+Distinct-location routes (excluding source_location_id == destination_location_id):
+  total distinct-location pairs: 42
+  successful: 42 (100.00%)
+  unavailable: 0 (0.00%)
+Feasible candidate hubs: 5 (100.00%)
+Excluded candidate hubs: 0 (0.00%)
+Supporting five-location test matrix rows inspected: 36
+
+2. Route-selection performance
+-------------------------------
+Shortest-distance feasible candidate: HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI (361.799 km)
+Fastest estimated-time feasible candidate: HUB_BHAJIPALA_MARKET (264.83 minutes)
+Candidate totals:
+  HUB_BHAJIPALA_MARKET: distance=362.431 km, time=264.83 min, handling=0.50 days, safety margin=0.50 days
+  HUB_MARKET_YARD_NASHIK: distance=366.776 km, time=270.87 min, handling=0.50 days, safety margin=0.50 days
+  HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI: distance=361.799 km, time=265.06 min, handling=0.50 days, safety margin=0.50 days
+  HUB_PERFECT_KRUSHI_MARKET: distance=363.281 km, time=266.09 min, handling=0.50 days, safety margin=0.50 days
+  HUB_PIMPALGAON_BASWANT_APMC_OLD: distance=369.011 km, time=288.83 min, handling=0.50 days, safety margin=0.50 days
+Differences from the shortest-distance selected route (alternative minus selected):
+  HUB_BHAJIPALA_MARKET: distance difference=+0.632 km, time difference=-0.23 min
+  HUB_MARKET_YARD_NASHIK: distance difference=+4.977 km, time difference=+5.81 min
+  HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI: distance difference=+0.000 km, time difference=+0.00 min
+  HUB_PERFECT_KRUSHI_MARKET: distance difference=+1.482 km, time difference=+1.03 min
+  HUB_PIMPALGAON_BASWANT_APMC_OLD: distance difference=+7.212 km, time difference=+23.77 min
+Baseline comparison: not available. The existing inputs contain routing estimates,
+not an observed historical route baseline with comparable end-to-end measurements.
+Transportation cost savings: not calculated; validated transport prices are unavailable.
+
+3. Shelf-life and constraint verification
+------------------------------------------
+For each candidate: total travel time in minutes was converted to days, then
+handling time and safety margin were added separately before applying shelf_life.py.
+
+Computed/stored consistency issues: 0
+  none
+
+4. Statistical summaries
+------------------------
+Total candidate route distance (5 observations, km):
+  mean=364.660, median=363.281
+  minimum=361.799, maximum=369.011
+  range=7.212, population standard deviation=2.774
+Total candidate estimated travel time (5 observations, minutes):
+  mean=271.136, median=266.090
+  minimum=264.830, maximum=288.830
+  range=24.000, population standard deviation=9.114
+These are descriptive summaries of the small prototype candidate set, not
+generalizable statistical claims about AgroLink or real-world traffic.
+
+5. Prediction-model metrics
+----------------------------
+Prediction-model metrics: Not applicable to the current routing-only prototype.
+  No predicted-versus-actual target columns or recognized trained-model artifacts were found.
+  R-squared, MAE, RMSE, MAPE, accuracy, precision, recall, F1, and a confusion matrix require
+  observed ground-truth travel outcomes plus model predictions (and class labels for classification).
+
+6. Reliability and limitations
+--------------------------------
+Successful unit tests demonstrate software behavior on local test data; they
+do not establish predictive accuracy or validate observed travel performance.
+The prototype lacks observed arrival times, actual route durations, traffic
+conditions, repeated trips, weather/seasonal data, shipment outcomes, and
+validated transport prices. A real evaluation would require those observations
+plus a defined prediction target and a held-out evaluation dataset.
+No Haversine distance was substituted for an OSRM road value in this analysis.

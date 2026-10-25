@@ -1,0 +1,3 @@
+state,district,market,commodity,variety,grade,arrival_date,min_price,max_price,modal_price
+Maharashtra,Ratnagiri,APMC Ratnagiri (Nachane),Tomato,Other,Local,23/10/2026,600,900,800
+Maharashtra,Pune,Pune(Pimpri),Tomato,Local,Local,23/10/2026,1000,1500,1250

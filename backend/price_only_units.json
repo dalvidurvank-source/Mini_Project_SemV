@@ -1,0 +1,5 @@
+{
+  "unit": "INR/quintal",
+  "evidence": "Project owner confirmed on 2026-10-23 that prices in both root exports are rupees per quintal.",
+  "files": ["price_data.csv", "price_data (25-26).csv"]
+}

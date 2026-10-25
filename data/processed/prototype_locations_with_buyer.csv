@@ -1,0 +1,8 @@
+location_id,location_name,latitude,longitude,location_type,verification_status
+HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,20.015063587300105,73.79766078270252,hub,user_supplied_coordinates
+HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),20.013481345248206,73.79398666927175,hub,user_supplied_coordinates
+HUB_MARKET_YARD_NASHIK,Market Yard Nashik,20.03131322346323,73.79483045015112,hub,user_supplied_coordinates
+HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,20.010853257341047,73.82910182869705,hub,user_supplied_coordinates
+HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),20.166537176732827,73.99529000910276,hub,user_supplied_coordinates
+FARMER_TEST_SPIT,"Sardar Patel Institute of Technology (SPIT), Andheri West, Mumbai",19.1236,72.8361,temporary_test_farmer,institution_reference_coordinate
+BUYER_TEST_CHH_SAMBHAJINAGAR,Chhatrapati Sambhajinagar city-centre test destination,19.8997,75.3794,temporary_test_buyer,approximate_city_centre_coordinate

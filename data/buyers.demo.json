@@ -1,0 +1,5 @@
+[
+  {"id":"demo-nasik-yard","name":"Demo buyer - Nashik market yard","location_id":"HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI","crop":"Tomato","description":"Sample buyer at the saved Nashik yard pin. No live offer or purchase commitment."},
+  {"id":"demo-pimpalgaon","name":"Demo buyer - Pimpalgaon","location_id":"HUB_PIMPALGAON_BASWANT_APMC_OLD","crop":"Tomato","description":"Sample buyer at the saved Pimpalgaon yard pin. No live offer or purchase commitment."},
+  {"id":"demo-sambhajinagar","name":"Demo buyer - Chhatrapati Sambhajinagar","location_id":"BUYER_TEST_CHH_SAMBHAJINAGAR","crop":"Tomato","description":"Sample buyer at an approximate city-centre test pin. No live offer or purchase commitment."}
+]

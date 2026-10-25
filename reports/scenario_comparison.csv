@@ -1,0 +1,475 @@
+case,source,state,district,market,variety,quality,harvest_date,selling_date,quantity,unit,transport_batch_INR,status,expected_status,passed,origin,model,base_INR_kg,transport_INR_kg,lower_INR_kg,midpoint_INR_kg,upper_INR_kg,error
+market baseline,price_only,Maharashtra,Ahmadnagar,Ahmednagar,Other,Unspecified,2025-10-28,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 1 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Ahmadnagar,Rahata,Other,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,8.9,1.6,7.05,7.3,7.55,
+quality A,price_only,Maharashtra,Ahmadnagar,Rahata,Other,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,8.9,1.6,7.05,7.3,7.55,
+quality B,price_only,Maharashtra,Ahmadnagar,Rahata,Other,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,8.9,1.6,7.05,7.3,7.55,
+quality C,price_only,Maharashtra,Ahmadnagar,Rahata,Other,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,8.9,1.6,7.05,7.3,7.55,
+harvest 7 days earlier,price_only,Maharashtra,Ahmadnagar,Rahata,Other,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,8.9,1.6,7.05,7.3,7.55,
+harvest 21 days earlier,price_only,Maharashtra,Ahmadnagar,Rahata,Other,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,8.9,1.6,7.05,7.3,7.55,
+equivalent quintal quantity,price_only,Maharashtra,Ahmadnagar,Rahata,Other,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,RECENT_MEAN,8.9,1.6,7.05,7.3,7.55,
+transport 0,price_only,Maharashtra,Ahmadnagar,Rahata,Other,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,RECENT_MEAN,8.9,0.0,8.65,8.9,9.15,
+transport 1600,price_only,Maharashtra,Ahmadnagar,Rahata,Other,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,RECENT_MEAN,8.9,3.2,5.45,5.7,5.95,
+rejected harvest_date,price_only,Maharashtra,Ahmadnagar,Rahata,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Ahmadnagar,Rahata,Other,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Ahmadnagar,Rahata,Other,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Ahmadnagar,Rahata,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Ahmadnagar,Rahata,Other,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Ahmadnagar,Rahata,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Ahmadnagar,Rahata,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,11.448847582724262,1.6,9.5988,9.8488,10.0988,
+quality A,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,11.448847582724262,1.6,9.5988,9.8488,10.0988,
+quality B,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,11.448847582724262,1.6,9.5988,9.8488,10.0988,
+quality C,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,11.448847582724262,1.6,9.5988,9.8488,10.0988,
+harvest 7 days earlier,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,SES,11.448847582724262,1.6,9.5988,9.8488,10.0988,
+harvest 21 days earlier,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,SES,11.448847582724262,1.6,9.5988,9.8488,10.0988,
+equivalent quintal quantity,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,SES,11.448847582724262,1.6,9.5988,9.8488,10.0988,
+transport 0,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,SES,11.448847582724262,0.0,11.1988,11.4488,11.6988,
+transport 1600,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,SES,11.448847582724262,3.2,7.9988,8.2488,8.4988,
+rejected harvest_date,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Ahmadnagar,Rahuri,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Ahmadnagar,Rahuri(Songaon),Other,Unspecified,2025-10-07,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 2 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,9.53782766293593,1.6,7.687799999999999,7.937799999999999,8.1878,
+quality A,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,9.53782766293593,1.6,7.687799999999999,7.937799999999999,8.1878,
+quality B,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,9.53782766293593,1.6,7.687799999999999,7.937799999999999,8.1878,
+quality C,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,9.53782766293593,1.6,7.687799999999999,7.937799999999999,8.1878,
+harvest 7 days earlier,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,SES,9.53782766293593,1.6,7.687799999999999,7.937799999999999,8.1878,
+harvest 21 days earlier,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,SES,9.53782766293593,1.6,7.687799999999999,7.937799999999999,8.1878,
+equivalent quintal quantity,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,SES,9.53782766293593,1.6,7.687799999999999,7.937799999999999,8.1878,
+transport 0,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,SES,9.53782766293593,0.0,9.287799999999999,9.537799999999999,9.787799999999999,
+transport 1600,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,SES,9.53782766293593,3.2,6.0878,6.3378,6.5878,
+rejected harvest_date,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Ahmadnagar,Sangamner,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,11.8,1.6,9.95,10.2,10.45,
+quality A,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,11.8,1.6,9.95,10.2,10.45,
+quality B,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,11.8,1.6,9.95,10.2,10.45,
+quality C,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,11.8,1.6,9.95,10.2,10.45,
+harvest 7 days earlier,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,11.8,1.6,9.95,10.2,10.45,
+harvest 21 days earlier,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,11.8,1.6,9.95,10.2,10.45,
+equivalent quintal quantity,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,RECENT_MEAN,11.8,1.6,9.95,10.2,10.45,
+transport 0,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,RECENT_MEAN,11.8,0.0,11.55,11.8,12.05,
+transport 1600,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,RECENT_MEAN,11.8,3.2,8.35,8.6,8.85,
+rejected harvest_date,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Ahmadnagar,Shrirampur,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Amravati,Amrawati(Frui & Veg. Market),Local,Unspecified,2025-10-29,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 4 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,12.173323057299553,1.6,10.3233,10.5733,10.8233,
+quality A,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,12.173323057299553,1.6,10.3233,10.5733,10.8233,
+quality B,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,12.173323057299553,1.6,10.3233,10.5733,10.8233,
+quality C,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,12.173323057299553,1.6,10.3233,10.5733,10.8233,
+harvest 7 days earlier,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,SES,12.173323057299553,1.6,10.3233,10.5733,10.8233,
+harvest 21 days earlier,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,SES,12.173323057299553,1.6,10.3233,10.5733,10.8233,
+equivalent quintal quantity,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,SES,12.173323057299553,1.6,10.3233,10.5733,10.8233,
+transport 0,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,SES,12.173323057299553,0.0,11.9233,12.1733,12.4233,
+transport 1600,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,SES,12.173323057299553,3.2,8.7233,8.9733,9.2233,
+rejected harvest_date,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Aurangabad,Chattrapati Sambhajinagar,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Chandrapur,Chandrapur(Ganjwad),Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 18 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Jalgaon,Bhusaval,Other,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,12.0,1.6,10.15,10.4,10.65,
+quality A,price_only,Maharashtra,Jalgaon,Bhusaval,Other,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,12.0,1.6,10.15,10.4,10.65,
+quality B,price_only,Maharashtra,Jalgaon,Bhusaval,Other,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,12.0,1.6,10.15,10.4,10.65,
+quality C,price_only,Maharashtra,Jalgaon,Bhusaval,Other,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,12.0,1.6,10.15,10.4,10.65,
+harvest 7 days earlier,price_only,Maharashtra,Jalgaon,Bhusaval,Other,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,12.0,1.6,10.15,10.4,10.65,
+harvest 21 days earlier,price_only,Maharashtra,Jalgaon,Bhusaval,Other,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,12.0,1.6,10.15,10.4,10.65,
+equivalent quintal quantity,price_only,Maharashtra,Jalgaon,Bhusaval,Other,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,LAST_OBSERVED,12.0,1.6,10.15,10.4,10.65,
+transport 0,price_only,Maharashtra,Jalgaon,Bhusaval,Other,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,LAST_OBSERVED,12.0,0.0,11.75,12.0,12.25,
+transport 1600,price_only,Maharashtra,Jalgaon,Bhusaval,Other,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,LAST_OBSERVED,12.0,3.2,8.55,8.8,9.05,
+rejected harvest_date,price_only,Maharashtra,Jalgaon,Bhusaval,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Jalgaon,Bhusaval,Other,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Jalgaon,Bhusaval,Other,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Jalgaon,Bhusaval,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Jalgaon,Bhusaval,Other,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Jalgaon,Bhusaval,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Jalgaon,Bhusaval,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Jalgaon,Jalgaon,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 3 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Kolhapur,Kolhapur,Other,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,12.6,1.6,10.75,11.0,11.25,
+quality A,price_only,Maharashtra,Kolhapur,Kolhapur,Other,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,12.6,1.6,10.75,11.0,11.25,
+quality B,price_only,Maharashtra,Kolhapur,Kolhapur,Other,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,12.6,1.6,10.75,11.0,11.25,
+quality C,price_only,Maharashtra,Kolhapur,Kolhapur,Other,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,12.6,1.6,10.75,11.0,11.25,
+harvest 7 days earlier,price_only,Maharashtra,Kolhapur,Kolhapur,Other,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,12.6,1.6,10.75,11.0,11.25,
+harvest 21 days earlier,price_only,Maharashtra,Kolhapur,Kolhapur,Other,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,12.6,1.6,10.75,11.0,11.25,
+equivalent quintal quantity,price_only,Maharashtra,Kolhapur,Kolhapur,Other,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,RECENT_MEAN,12.6,1.6,10.75,11.0,11.25,
+transport 0,price_only,Maharashtra,Kolhapur,Kolhapur,Other,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,RECENT_MEAN,12.6,0.0,12.35,12.6,12.85,
+transport 1600,price_only,Maharashtra,Kolhapur,Kolhapur,Other,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,RECENT_MEAN,12.6,3.2,9.15,9.4,9.65,
+rejected harvest_date,price_only,Maharashtra,Kolhapur,Kolhapur,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Kolhapur,Kolhapur,Other,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Kolhapur,Kolhapur,Other,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Kolhapur,Kolhapur,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Kolhapur,Kolhapur,Other,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Kolhapur,Kolhapur,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Kolhapur,Kolhapur,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Kolhapur,Vadgaonpeth,Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 3 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Mumbai,Mumbai,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 5 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Nagpur,Hingna,Local,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,17.88,1.6,16.03,16.28,16.53,
+quality A,price_only,Maharashtra,Nagpur,Hingna,Local,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,17.88,1.6,16.03,16.28,16.53,
+quality B,price_only,Maharashtra,Nagpur,Hingna,Local,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,17.88,1.6,16.03,16.28,16.53,
+quality C,price_only,Maharashtra,Nagpur,Hingna,Local,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,17.88,1.6,16.03,16.28,16.53,
+harvest 7 days earlier,price_only,Maharashtra,Nagpur,Hingna,Local,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,17.88,1.6,16.03,16.28,16.53,
+harvest 21 days earlier,price_only,Maharashtra,Nagpur,Hingna,Local,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,17.88,1.6,16.03,16.28,16.53,
+equivalent quintal quantity,price_only,Maharashtra,Nagpur,Hingna,Local,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,RECENT_MEAN,17.88,1.6,16.03,16.28,16.53,
+transport 0,price_only,Maharashtra,Nagpur,Hingna,Local,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,RECENT_MEAN,17.88,0.0,17.63,17.88,18.13,
+transport 1600,price_only,Maharashtra,Nagpur,Hingna,Local,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,RECENT_MEAN,17.88,3.2,14.43,14.68,14.93,
+rejected harvest_date,price_only,Maharashtra,Nagpur,Hingna,Local,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Nagpur,Hingna,Local,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Nagpur,Hingna,Local,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Nagpur,Hingna,Local,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Nagpur,Hingna,Local,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Nagpur,Hingna,Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Nagpur,Hingna,Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,18.05,1.6,16.2,16.45,16.7,
+quality A,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,18.05,1.6,16.2,16.45,16.7,
+quality B,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,18.05,1.6,16.2,16.45,16.7,
+quality C,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,18.05,1.6,16.2,16.45,16.7,
+harvest 7 days earlier,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,18.05,1.6,16.2,16.45,16.7,
+harvest 21 days earlier,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,18.05,1.6,16.2,16.45,16.7,
+equivalent quintal quantity,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,LAST_OBSERVED,18.05,1.6,16.2,16.45,16.7,
+transport 0,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,LAST_OBSERVED,18.05,0.0,17.8,18.05,18.3,
+transport 1600,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,LAST_OBSERVED,18.05,3.2,14.6,14.85,15.1,
+rejected harvest_date,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Nagpur,Kalmeshwar,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Nagpur,Kamthi,Local,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,23.072728943868114,1.6,21.2227,21.4727,21.7227,
+quality A,price_only,Maharashtra,Nagpur,Kamthi,Local,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,23.072728943868114,1.6,21.2227,21.4727,21.7227,
+quality B,price_only,Maharashtra,Nagpur,Kamthi,Local,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,23.072728943868114,1.6,21.2227,21.4727,21.7227,
+quality C,price_only,Maharashtra,Nagpur,Kamthi,Local,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,23.072728943868114,1.6,21.2227,21.4727,21.7227,
+harvest 7 days earlier,price_only,Maharashtra,Nagpur,Kamthi,Local,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,SES,23.072728943868114,1.6,21.2227,21.4727,21.7227,
+harvest 21 days earlier,price_only,Maharashtra,Nagpur,Kamthi,Local,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,SES,23.072728943868114,1.6,21.2227,21.4727,21.7227,
+equivalent quintal quantity,price_only,Maharashtra,Nagpur,Kamthi,Local,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,SES,23.072728943868114,1.6,21.2227,21.4727,21.7227,
+transport 0,price_only,Maharashtra,Nagpur,Kamthi,Local,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,SES,23.072728943868114,0.0,22.8227,23.0727,23.3227,
+transport 1600,price_only,Maharashtra,Nagpur,Kamthi,Local,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,SES,23.072728943868114,3.2,19.6227,19.8727,20.1227,
+rejected harvest_date,price_only,Maharashtra,Nagpur,Kamthi,Local,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Nagpur,Kamthi,Local,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Nagpur,Kamthi,Local,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Nagpur,Kamthi,Local,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Nagpur,Kamthi,Local,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Nagpur,Kamthi,Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Nagpur,Kamthi,Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Nagpur,Nagpur,Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Frozen winner failed final evaluation or forecasting: Smoothing optimization did not converge.
+market baseline,price_only,Maharashtra,Nagpur,Nagpur,Other,Unspecified,2025-10-29,,500,kg,800,200,200,True,2025-10-29,RECENT_MEAN,22.25,1.6,20.4,20.65,20.9,
+quality A,price_only,Maharashtra,Nagpur,Nagpur,Other,A,2025-10-29,,500,kg,800,200,200,True,2025-10-29,RECENT_MEAN,22.25,1.6,20.4,20.65,20.9,
+quality B,price_only,Maharashtra,Nagpur,Nagpur,Other,B,2025-10-29,,500,kg,800,200,200,True,2025-10-29,RECENT_MEAN,22.25,1.6,20.4,20.65,20.9,
+quality C,price_only,Maharashtra,Nagpur,Nagpur,Other,C,2025-10-29,,500,kg,800,200,200,True,2025-10-29,RECENT_MEAN,22.25,1.6,20.4,20.65,20.9,
+harvest 7 days earlier,price_only,Maharashtra,Nagpur,Nagpur,Other,Unspecified,2025-10-22,,500,kg,800,200,200,True,2025-10-29,RECENT_MEAN,22.25,1.6,20.4,20.65,20.9,
+harvest 21 days earlier,price_only,Maharashtra,Nagpur,Nagpur,Other,Unspecified,2025-10-08,,500,kg,800,200,200,True,2025-10-29,RECENT_MEAN,22.25,1.6,20.4,20.65,20.9,
+equivalent quintal quantity,price_only,Maharashtra,Nagpur,Nagpur,Other,Unspecified,2025-10-29,,5,quintal,800,200,200,True,2025-10-29,RECENT_MEAN,22.25,1.6,20.4,20.65,20.9,
+transport 0,price_only,Maharashtra,Nagpur,Nagpur,Other,Unspecified,2025-10-29,,500,kg,0,200,200,True,2025-10-29,RECENT_MEAN,22.25,0.0,22.0,22.25,22.5,
+transport 1600,price_only,Maharashtra,Nagpur,Nagpur,Other,Unspecified,2025-10-29,,500,kg,1600,200,200,True,2025-10-29,RECENT_MEAN,22.25,3.2,18.8,19.05,19.3,
+rejected harvest_date,price_only,Maharashtra,Nagpur,Nagpur,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Nagpur,Nagpur,Other,Unspecified,2025-10-29,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Nagpur,Nagpur,Other,Unspecified,2025-10-29,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Nagpur,Nagpur,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Nagpur,Nagpur,Other,Premium,2025-10-29,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Nagpur,Nagpur,Other,Unspecified,2025-10-29,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Nagpur,Nagpur,Other,Unspecified,2025-10-29,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Nagpur,Parshiwani,Local,Unspecified,2025-10-27,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 5 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Nagpur,Ramtek,Other,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,18.0,1.6,16.15,16.4,16.65,
+quality A,price_only,Maharashtra,Nagpur,Ramtek,Other,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,18.0,1.6,16.15,16.4,16.65,
+quality B,price_only,Maharashtra,Nagpur,Ramtek,Other,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,18.0,1.6,16.15,16.4,16.65,
+quality C,price_only,Maharashtra,Nagpur,Ramtek,Other,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,18.0,1.6,16.15,16.4,16.65,
+harvest 7 days earlier,price_only,Maharashtra,Nagpur,Ramtek,Other,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,18.0,1.6,16.15,16.4,16.65,
+harvest 21 days earlier,price_only,Maharashtra,Nagpur,Ramtek,Other,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,18.0,1.6,16.15,16.4,16.65,
+equivalent quintal quantity,price_only,Maharashtra,Nagpur,Ramtek,Other,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,LAST_OBSERVED,18.0,1.6,16.15,16.4,16.65,
+transport 0,price_only,Maharashtra,Nagpur,Ramtek,Other,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,LAST_OBSERVED,18.0,0.0,17.75,18.0,18.25,
+transport 1600,price_only,Maharashtra,Nagpur,Ramtek,Other,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,LAST_OBSERVED,18.0,3.2,14.55,14.8,15.05,
+rejected harvest_date,price_only,Maharashtra,Nagpur,Ramtek,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Nagpur,Ramtek,Other,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Nagpur,Ramtek,Other,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Nagpur,Ramtek,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Nagpur,Ramtek,Other,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Nagpur,Ramtek,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Nagpur,Ramtek,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Nandurbar,Navapur,Other,Unspecified,2024-12-31,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 1 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Nashik,Chandvad,Local,Unspecified,2025-10-04,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 3 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Nashik,Dindori,Other,Unspecified,2025-10-27,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 10 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Nashik,Ghoti,Other,Unspecified,2025-10-28,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 1 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Nashik,Lasalgaon,Other,Unspecified,2025-10-23,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 1 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Nashik,Nasik,Other,Unspecified,2025-10-29,,500,kg,800,200,200,True,2025-10-29,LAST_OBSERVED,5.25,1.6,3.4,3.65,3.9,
+quality A,price_only,Maharashtra,Nashik,Nasik,Other,A,2025-10-29,,500,kg,800,200,200,True,2025-10-29,LAST_OBSERVED,5.25,1.6,3.4,3.65,3.9,
+quality B,price_only,Maharashtra,Nashik,Nasik,Other,B,2025-10-29,,500,kg,800,200,200,True,2025-10-29,LAST_OBSERVED,5.25,1.6,3.4,3.65,3.9,
+quality C,price_only,Maharashtra,Nashik,Nasik,Other,C,2025-10-29,,500,kg,800,200,200,True,2025-10-29,LAST_OBSERVED,5.25,1.6,3.4,3.65,3.9,
+harvest 7 days earlier,price_only,Maharashtra,Nashik,Nasik,Other,Unspecified,2025-10-22,,500,kg,800,200,200,True,2025-10-29,LAST_OBSERVED,5.25,1.6,3.4,3.65,3.9,
+harvest 21 days earlier,price_only,Maharashtra,Nashik,Nasik,Other,Unspecified,2025-10-08,,500,kg,800,200,200,True,2025-10-29,LAST_OBSERVED,5.25,1.6,3.4,3.65,3.9,
+equivalent quintal quantity,price_only,Maharashtra,Nashik,Nasik,Other,Unspecified,2025-10-29,,5,quintal,800,200,200,True,2025-10-29,LAST_OBSERVED,5.25,1.6,3.4,3.65,3.9,
+transport 0,price_only,Maharashtra,Nashik,Nasik,Other,Unspecified,2025-10-29,,500,kg,0,200,200,True,2025-10-29,LAST_OBSERVED,5.25,0.0,5.0,5.25,5.5,
+transport 1600,price_only,Maharashtra,Nashik,Nasik,Other,Unspecified,2025-10-29,,500,kg,1600,200,200,True,2025-10-29,LAST_OBSERVED,5.25,3.2,1.8,2.05,2.3,
+rejected harvest_date,price_only,Maharashtra,Nashik,Nasik,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Nashik,Nasik,Other,Unspecified,2025-10-29,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Nashik,Nasik,Other,Unspecified,2025-10-29,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Nashik,Nasik,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Nashik,Nasik,Other,Premium,2025-10-29,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Nashik,Nasik,Other,Unspecified,2025-10-29,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Nashik,Nasik,Other,Unspecified,2025-10-29,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Nashik,Pimpalgaon,Other,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,10.55,1.6,8.7,8.95,9.2,
+quality A,price_only,Maharashtra,Nashik,Pimpalgaon,Other,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,10.55,1.6,8.7,8.95,9.2,
+quality B,price_only,Maharashtra,Nashik,Pimpalgaon,Other,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,10.55,1.6,8.7,8.95,9.2,
+quality C,price_only,Maharashtra,Nashik,Pimpalgaon,Other,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,10.55,1.6,8.7,8.95,9.2,
+harvest 7 days earlier,price_only,Maharashtra,Nashik,Pimpalgaon,Other,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,10.55,1.6,8.7,8.95,9.2,
+harvest 21 days earlier,price_only,Maharashtra,Nashik,Pimpalgaon,Other,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,10.55,1.6,8.7,8.95,9.2,
+equivalent quintal quantity,price_only,Maharashtra,Nashik,Pimpalgaon,Other,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,LAST_OBSERVED,10.55,1.6,8.7,8.95,9.2,
+transport 0,price_only,Maharashtra,Nashik,Pimpalgaon,Other,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,LAST_OBSERVED,10.55,0.0,10.3,10.55,10.8,
+transport 1600,price_only,Maharashtra,Nashik,Pimpalgaon,Other,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,LAST_OBSERVED,10.55,3.2,7.1,7.35,7.6,
+rejected harvest_date,price_only,Maharashtra,Nashik,Pimpalgaon,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Nashik,Pimpalgaon,Other,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Nashik,Pimpalgaon,Other,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Nashik,Pimpalgaon,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Nashik,Pimpalgaon,Other,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Nashik,Pimpalgaon,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Nashik,Pimpalgaon,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Pune,Junnar(Narayangaon),Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 5 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Pune,Junnar(Otur),Local,Unspecified,2025-09-29,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 1 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Pune,Khed(Chakan),Other,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,9.8,1.6,7.95,8.2,8.45,
+quality A,price_only,Maharashtra,Pune,Khed(Chakan),Other,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,9.8,1.6,7.95,8.2,8.45,
+quality B,price_only,Maharashtra,Pune,Khed(Chakan),Other,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,9.8,1.6,7.95,8.2,8.45,
+quality C,price_only,Maharashtra,Pune,Khed(Chakan),Other,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,9.8,1.6,7.95,8.2,8.45,
+harvest 7 days earlier,price_only,Maharashtra,Pune,Khed(Chakan),Other,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,9.8,1.6,7.95,8.2,8.45,
+harvest 21 days earlier,price_only,Maharashtra,Pune,Khed(Chakan),Other,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,9.8,1.6,7.95,8.2,8.45,
+equivalent quintal quantity,price_only,Maharashtra,Pune,Khed(Chakan),Other,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,RECENT_MEAN,9.8,1.6,7.95,8.2,8.45,
+transport 0,price_only,Maharashtra,Pune,Khed(Chakan),Other,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,RECENT_MEAN,9.8,0.0,9.55,9.8,10.05,
+transport 1600,price_only,Maharashtra,Pune,Khed(Chakan),Other,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,RECENT_MEAN,9.8,3.2,6.35,6.6,6.85,
+rejected harvest_date,price_only,Maharashtra,Pune,Khed(Chakan),Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Pune,Khed(Chakan),Other,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Pune,Khed(Chakan),Other,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Pune,Khed(Chakan),Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Pune,Khed(Chakan),Other,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Pune,Khed(Chakan),Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Pune,Khed(Chakan),Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Pune,Manchar,Other,Unspecified,2025-10-17,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 8 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Pune,Pune,Local,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,10.1,1.6,8.25,8.5,8.75,
+quality A,price_only,Maharashtra,Pune,Pune,Local,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,10.1,1.6,8.25,8.5,8.75,
+quality B,price_only,Maharashtra,Pune,Pune,Local,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,10.1,1.6,8.25,8.5,8.75,
+quality C,price_only,Maharashtra,Pune,Pune,Local,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,10.1,1.6,8.25,8.5,8.75,
+harvest 7 days earlier,price_only,Maharashtra,Pune,Pune,Local,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,10.1,1.6,8.25,8.5,8.75,
+harvest 21 days earlier,price_only,Maharashtra,Pune,Pune,Local,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,RECENT_MEAN,10.1,1.6,8.25,8.5,8.75,
+equivalent quintal quantity,price_only,Maharashtra,Pune,Pune,Local,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,RECENT_MEAN,10.1,1.6,8.25,8.5,8.75,
+transport 0,price_only,Maharashtra,Pune,Pune,Local,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,RECENT_MEAN,10.1,0.0,9.85,10.1,10.35,
+transport 1600,price_only,Maharashtra,Pune,Pune,Local,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,RECENT_MEAN,10.1,3.2,6.65,6.9,7.15,
+rejected harvest_date,price_only,Maharashtra,Pune,Pune,Local,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Pune,Pune,Local,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Pune,Pune,Local,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Pune,Pune,Local,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Pune,Pune,Local,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Pune,Pune,Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Pune,Pune,Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Pune,Pune(Khadiki),Local,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,8.562069205655126,1.6,6.7121,6.9621,7.2121,
+quality A,price_only,Maharashtra,Pune,Pune(Khadiki),Local,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,8.562069205655126,1.6,6.7121,6.9621,7.2121,
+quality B,price_only,Maharashtra,Pune,Pune(Khadiki),Local,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,8.562069205655126,1.6,6.7121,6.9621,7.2121,
+quality C,price_only,Maharashtra,Pune,Pune(Khadiki),Local,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,8.562069205655126,1.6,6.7121,6.9621,7.2121,
+harvest 7 days earlier,price_only,Maharashtra,Pune,Pune(Khadiki),Local,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,SES,8.562069205655126,1.6,6.7121,6.9621,7.2121,
+harvest 21 days earlier,price_only,Maharashtra,Pune,Pune(Khadiki),Local,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,SES,8.562069205655126,1.6,6.7121,6.9621,7.2121,
+equivalent quintal quantity,price_only,Maharashtra,Pune,Pune(Khadiki),Local,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,SES,8.562069205655126,1.6,6.7121,6.9621,7.2121,
+transport 0,price_only,Maharashtra,Pune,Pune(Khadiki),Local,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,SES,8.562069205655126,0.0,8.312100000000001,8.562100000000001,8.812100000000001,
+transport 1600,price_only,Maharashtra,Pune,Pune(Khadiki),Local,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,SES,8.562069205655126,3.2,5.1121,5.362100000000001,5.612100000000001,
+rejected harvest_date,price_only,Maharashtra,Pune,Pune(Khadiki),Local,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Pune,Pune(Khadiki),Local,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Pune,Pune(Khadiki),Local,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Pune,Pune(Khadiki),Local,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Pune,Pune(Khadiki),Local,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Pune,Pune(Khadiki),Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Pune,Pune(Khadiki),Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Pune,Pune(Manjri),Other,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,15.0,1.6,13.15,13.4,13.65,
+quality A,price_only,Maharashtra,Pune,Pune(Manjri),Other,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,15.0,1.6,13.15,13.4,13.65,
+quality B,price_only,Maharashtra,Pune,Pune(Manjri),Other,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,15.0,1.6,13.15,13.4,13.65,
+quality C,price_only,Maharashtra,Pune,Pune(Manjri),Other,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,15.0,1.6,13.15,13.4,13.65,
+harvest 7 days earlier,price_only,Maharashtra,Pune,Pune(Manjri),Other,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,15.0,1.6,13.15,13.4,13.65,
+harvest 21 days earlier,price_only,Maharashtra,Pune,Pune(Manjri),Other,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,15.0,1.6,13.15,13.4,13.65,
+equivalent quintal quantity,price_only,Maharashtra,Pune,Pune(Manjri),Other,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,LAST_OBSERVED,15.0,1.6,13.15,13.4,13.65,
+transport 0,price_only,Maharashtra,Pune,Pune(Manjri),Other,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,LAST_OBSERVED,15.0,0.0,14.75,15.0,15.25,
+transport 1600,price_only,Maharashtra,Pune,Pune(Manjri),Other,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,LAST_OBSERVED,15.0,3.2,11.55,11.8,12.05,
+rejected harvest_date,price_only,Maharashtra,Pune,Pune(Manjri),Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Pune,Pune(Manjri),Other,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Pune,Pune(Manjri),Other,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Pune,Pune(Manjri),Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Pune,Pune(Manjri),Other,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Pune,Pune(Manjri),Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Pune,Pune(Manjri),Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Pune,Pune(Moshi),Local,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,12.5,1.6,10.65,10.9,11.15,
+quality A,price_only,Maharashtra,Pune,Pune(Moshi),Local,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,12.5,1.6,10.65,10.9,11.15,
+quality B,price_only,Maharashtra,Pune,Pune(Moshi),Local,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,12.5,1.6,10.65,10.9,11.15,
+quality C,price_only,Maharashtra,Pune,Pune(Moshi),Local,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,12.5,1.6,10.65,10.9,11.15,
+harvest 7 days earlier,price_only,Maharashtra,Pune,Pune(Moshi),Local,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,12.5,1.6,10.65,10.9,11.15,
+harvest 21 days earlier,price_only,Maharashtra,Pune,Pune(Moshi),Local,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,12.5,1.6,10.65,10.9,11.15,
+equivalent quintal quantity,price_only,Maharashtra,Pune,Pune(Moshi),Local,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,LAST_OBSERVED,12.5,1.6,10.65,10.9,11.15,
+transport 0,price_only,Maharashtra,Pune,Pune(Moshi),Local,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,LAST_OBSERVED,12.5,0.0,12.25,12.5,12.75,
+transport 1600,price_only,Maharashtra,Pune,Pune(Moshi),Local,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,LAST_OBSERVED,12.5,3.2,9.05,9.3,9.55,
+rejected harvest_date,price_only,Maharashtra,Pune,Pune(Moshi),Local,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Pune,Pune(Moshi),Local,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Pune,Pune(Moshi),Local,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Pune,Pune(Moshi),Local,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Pune,Pune(Moshi),Local,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Pune,Pune(Moshi),Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Pune,Pune(Moshi),Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Pune,Pune(Pimpri),Local,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,14.66666651697172,1.6,12.8167,13.0667,13.3167,
+quality A,price_only,Maharashtra,Pune,Pune(Pimpri),Local,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,14.66666651697172,1.6,12.8167,13.0667,13.3167,
+quality B,price_only,Maharashtra,Pune,Pune(Pimpri),Local,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,14.66666651697172,1.6,12.8167,13.0667,13.3167,
+quality C,price_only,Maharashtra,Pune,Pune(Pimpri),Local,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,14.66666651697172,1.6,12.8167,13.0667,13.3167,
+harvest 7 days earlier,price_only,Maharashtra,Pune,Pune(Pimpri),Local,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,SES,14.66666651697172,1.6,12.8167,13.0667,13.3167,
+harvest 21 days earlier,price_only,Maharashtra,Pune,Pune(Pimpri),Local,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,SES,14.66666651697172,1.6,12.8167,13.0667,13.3167,
+equivalent quintal quantity,price_only,Maharashtra,Pune,Pune(Pimpri),Local,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,SES,14.66666651697172,1.6,12.8167,13.0667,13.3167,
+transport 0,price_only,Maharashtra,Pune,Pune(Pimpri),Local,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,SES,14.66666651697172,0.0,14.4167,14.6667,14.9167,
+transport 1600,price_only,Maharashtra,Pune,Pune(Pimpri),Local,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,SES,14.66666651697172,3.2,11.216700000000001,11.466700000000001,11.716700000000001,
+rejected harvest_date,price_only,Maharashtra,Pune,Pune(Pimpri),Local,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Pune,Pune(Pimpri),Local,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Pune,Pune(Pimpri),Local,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Pune,Pune(Pimpri),Local,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Pune,Pune(Pimpri),Local,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Pune,Pune(Pimpri),Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Pune,Pune(Pimpri),Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Raigarh,Panvel,Other,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,32.651515944691845,1.6,30.8015,31.0515,31.3015,
+quality A,price_only,Maharashtra,Raigarh,Panvel,Other,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,32.651515944691845,1.6,30.8015,31.0515,31.3015,
+quality B,price_only,Maharashtra,Raigarh,Panvel,Other,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,32.651515944691845,1.6,30.8015,31.0515,31.3015,
+quality C,price_only,Maharashtra,Raigarh,Panvel,Other,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,SES,32.651515944691845,1.6,30.8015,31.0515,31.3015,
+harvest 7 days earlier,price_only,Maharashtra,Raigarh,Panvel,Other,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,SES,32.651515944691845,1.6,30.8015,31.0515,31.3015,
+harvest 21 days earlier,price_only,Maharashtra,Raigarh,Panvel,Other,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,SES,32.651515944691845,1.6,30.8015,31.0515,31.3015,
+equivalent quintal quantity,price_only,Maharashtra,Raigarh,Panvel,Other,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,SES,32.651515944691845,1.6,30.8015,31.0515,31.3015,
+transport 0,price_only,Maharashtra,Raigarh,Panvel,Other,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,SES,32.651515944691845,0.0,32.4015,32.6515,32.9015,
+transport 1600,price_only,Maharashtra,Raigarh,Panvel,Other,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,SES,32.651515944691845,3.2,29.2015,29.4515,29.7015,
+rejected harvest_date,price_only,Maharashtra,Raigarh,Panvel,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Raigarh,Panvel,Other,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Raigarh,Panvel,Other,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Raigarh,Panvel,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Raigarh,Panvel,Other,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Raigarh,Panvel,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Raigarh,Panvel,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Ratnagiri,Ratnagiri (Nachane),Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 2 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Sangli,Islampur,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 17 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Sangli,Palus,Other,Unspecified,2025-10-26,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 1 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Sangli,Vita,Other,Unspecified,2025-10-28,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 1 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Satara,Karad,Other,Unspecified,2025-10-29,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 4 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Satara,Patan,Other,Unspecified,2025-10-28,,500,kg,800,200,200,True,2025-10-28,LAST_OBSERVED,11.5,1.6,9.65,9.9,10.15,
+quality A,price_only,Maharashtra,Satara,Patan,Other,A,2025-10-28,,500,kg,800,200,200,True,2025-10-28,LAST_OBSERVED,11.5,1.6,9.65,9.9,10.15,
+quality B,price_only,Maharashtra,Satara,Patan,Other,B,2025-10-28,,500,kg,800,200,200,True,2025-10-28,LAST_OBSERVED,11.5,1.6,9.65,9.9,10.15,
+quality C,price_only,Maharashtra,Satara,Patan,Other,C,2025-10-28,,500,kg,800,200,200,True,2025-10-28,LAST_OBSERVED,11.5,1.6,9.65,9.9,10.15,
+harvest 7 days earlier,price_only,Maharashtra,Satara,Patan,Other,Unspecified,2025-10-21,,500,kg,800,200,200,True,2025-10-28,LAST_OBSERVED,11.5,1.6,9.65,9.9,10.15,
+harvest 21 days earlier,price_only,Maharashtra,Satara,Patan,Other,Unspecified,2025-10-07,,500,kg,800,200,200,True,2025-10-28,LAST_OBSERVED,11.5,1.6,9.65,9.9,10.15,
+equivalent quintal quantity,price_only,Maharashtra,Satara,Patan,Other,Unspecified,2025-10-28,,5,quintal,800,200,200,True,2025-10-28,LAST_OBSERVED,11.5,1.6,9.65,9.9,10.15,
+transport 0,price_only,Maharashtra,Satara,Patan,Other,Unspecified,2025-10-28,,500,kg,0,200,200,True,2025-10-28,LAST_OBSERVED,11.5,0.0,11.25,11.5,11.75,
+transport 1600,price_only,Maharashtra,Satara,Patan,Other,Unspecified,2025-10-28,,500,kg,1600,200,200,True,2025-10-28,LAST_OBSERVED,11.5,3.2,8.05,8.3,8.55,
+rejected harvest_date,price_only,Maharashtra,Satara,Patan,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Satara,Patan,Other,Unspecified,2025-10-28,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Satara,Patan,Other,Unspecified,2025-10-28,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Satara,Patan,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Satara,Patan,Other,Premium,2025-10-28,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Satara,Patan,Other,Unspecified,2025-10-28,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Satara,Patan,Other,Unspecified,2025-10-28,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Satara,Phaltan,Other,Unspecified,2025-10-18,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 8 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Satara,Satara,Other,Unspecified,2025-10-29,,500,kg,800,200,200,True,2025-10-29,LAST_OBSERVED,12.5,1.6,10.65,10.9,11.15,
+quality A,price_only,Maharashtra,Satara,Satara,Other,A,2025-10-29,,500,kg,800,200,200,True,2025-10-29,LAST_OBSERVED,12.5,1.6,10.65,10.9,11.15,
+quality B,price_only,Maharashtra,Satara,Satara,Other,B,2025-10-29,,500,kg,800,200,200,True,2025-10-29,LAST_OBSERVED,12.5,1.6,10.65,10.9,11.15,
+quality C,price_only,Maharashtra,Satara,Satara,Other,C,2025-10-29,,500,kg,800,200,200,True,2025-10-29,LAST_OBSERVED,12.5,1.6,10.65,10.9,11.15,
+harvest 7 days earlier,price_only,Maharashtra,Satara,Satara,Other,Unspecified,2025-10-22,,500,kg,800,200,200,True,2025-10-29,LAST_OBSERVED,12.5,1.6,10.65,10.9,11.15,
+harvest 21 days earlier,price_only,Maharashtra,Satara,Satara,Other,Unspecified,2025-10-08,,500,kg,800,200,200,True,2025-10-29,LAST_OBSERVED,12.5,1.6,10.65,10.9,11.15,
+equivalent quintal quantity,price_only,Maharashtra,Satara,Satara,Other,Unspecified,2025-10-29,,5,quintal,800,200,200,True,2025-10-29,LAST_OBSERVED,12.5,1.6,10.65,10.9,11.15,
+transport 0,price_only,Maharashtra,Satara,Satara,Other,Unspecified,2025-10-29,,500,kg,0,200,200,True,2025-10-29,LAST_OBSERVED,12.5,0.0,12.25,12.5,12.75,
+transport 1600,price_only,Maharashtra,Satara,Satara,Other,Unspecified,2025-10-29,,500,kg,1600,200,200,True,2025-10-29,LAST_OBSERVED,12.5,3.2,9.05,9.3,9.55,
+rejected harvest_date,price_only,Maharashtra,Satara,Satara,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Satara,Satara,Other,Unspecified,2025-10-29,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Satara,Satara,Other,Unspecified,2025-10-29,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Satara,Satara,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Satara,Satara,Other,Premium,2025-10-29,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Satara,Satara,Other,Unspecified,2025-10-29,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Satara,Satara,Other,Unspecified,2025-10-29,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Satara,Vai,Local,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,10.0,1.6,8.15,8.4,8.65,
+quality A,price_only,Maharashtra,Satara,Vai,Local,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,10.0,1.6,8.15,8.4,8.65,
+quality B,price_only,Maharashtra,Satara,Vai,Local,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,10.0,1.6,8.15,8.4,8.65,
+quality C,price_only,Maharashtra,Satara,Vai,Local,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,10.0,1.6,8.15,8.4,8.65,
+harvest 7 days earlier,price_only,Maharashtra,Satara,Vai,Local,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,10.0,1.6,8.15,8.4,8.65,
+harvest 21 days earlier,price_only,Maharashtra,Satara,Vai,Local,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,10.0,1.6,8.15,8.4,8.65,
+equivalent quintal quantity,price_only,Maharashtra,Satara,Vai,Local,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,LAST_OBSERVED,10.0,1.6,8.15,8.4,8.65,
+transport 0,price_only,Maharashtra,Satara,Vai,Local,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,LAST_OBSERVED,10.0,0.0,9.75,10.0,10.25,
+transport 1600,price_only,Maharashtra,Satara,Vai,Local,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,LAST_OBSERVED,10.0,3.2,6.55,6.8,7.05,
+rejected harvest_date,price_only,Maharashtra,Satara,Vai,Local,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Satara,Vai,Local,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Satara,Vai,Local,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Satara,Vai,Local,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Satara,Vai,Local,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Satara,Vai,Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Satara,Vai,Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Solapur,Akluj,Local,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,15.0,1.6,13.15,13.4,13.65,
+quality A,price_only,Maharashtra,Solapur,Akluj,Local,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,15.0,1.6,13.15,13.4,13.65,
+quality B,price_only,Maharashtra,Solapur,Akluj,Local,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,15.0,1.6,13.15,13.4,13.65,
+quality C,price_only,Maharashtra,Solapur,Akluj,Local,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,15.0,1.6,13.15,13.4,13.65,
+harvest 7 days earlier,price_only,Maharashtra,Solapur,Akluj,Local,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,15.0,1.6,13.15,13.4,13.65,
+harvest 21 days earlier,price_only,Maharashtra,Solapur,Akluj,Local,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,15.0,1.6,13.15,13.4,13.65,
+equivalent quintal quantity,price_only,Maharashtra,Solapur,Akluj,Local,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,LAST_OBSERVED,15.0,1.6,13.15,13.4,13.65,
+transport 0,price_only,Maharashtra,Solapur,Akluj,Local,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,LAST_OBSERVED,15.0,0.0,14.75,15.0,15.25,
+transport 1600,price_only,Maharashtra,Solapur,Akluj,Local,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,LAST_OBSERVED,15.0,3.2,11.55,11.8,12.05,
+rejected harvest_date,price_only,Maharashtra,Solapur,Akluj,Local,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Solapur,Akluj,Local,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Solapur,Akluj,Local,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Solapur,Akluj,Local,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Solapur,Akluj,Local,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Solapur,Akluj,Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Solapur,Akluj,Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Solapur,Akluj,Other,Unspecified,2024-12-30,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 1 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Solapur,Mangal Wedha,Local,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,13.0,1.6,11.15,11.4,11.65,
+quality A,price_only,Maharashtra,Solapur,Mangal Wedha,Local,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,13.0,1.6,11.15,11.4,11.65,
+quality B,price_only,Maharashtra,Solapur,Mangal Wedha,Local,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,13.0,1.6,11.15,11.4,11.65,
+quality C,price_only,Maharashtra,Solapur,Mangal Wedha,Local,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,13.0,1.6,11.15,11.4,11.65,
+harvest 7 days earlier,price_only,Maharashtra,Solapur,Mangal Wedha,Local,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,13.0,1.6,11.15,11.4,11.65,
+harvest 21 days earlier,price_only,Maharashtra,Solapur,Mangal Wedha,Local,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,13.0,1.6,11.15,11.4,11.65,
+equivalent quintal quantity,price_only,Maharashtra,Solapur,Mangal Wedha,Local,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,LAST_OBSERVED,13.0,1.6,11.15,11.4,11.65,
+transport 0,price_only,Maharashtra,Solapur,Mangal Wedha,Local,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,LAST_OBSERVED,13.0,0.0,12.75,13.0,13.25,
+transport 1600,price_only,Maharashtra,Solapur,Mangal Wedha,Local,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,LAST_OBSERVED,13.0,3.2,9.55,9.8,10.05,
+rejected harvest_date,price_only,Maharashtra,Solapur,Mangal Wedha,Local,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Solapur,Mangal Wedha,Local,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Solapur,Mangal Wedha,Local,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Solapur,Mangal Wedha,Local,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Solapur,Mangal Wedha,Local,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Solapur,Mangal Wedha,Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Solapur,Mangal Wedha,Local,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Solapur,Pandharpur,Other,Unspecified,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,14.0,1.6,12.15,12.4,12.65,
+quality A,price_only,Maharashtra,Solapur,Pandharpur,Other,A,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,14.0,1.6,12.15,12.4,12.65,
+quality B,price_only,Maharashtra,Solapur,Pandharpur,Other,B,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,14.0,1.6,12.15,12.4,12.65,
+quality C,price_only,Maharashtra,Solapur,Pandharpur,Other,C,2025-10-30,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,14.0,1.6,12.15,12.4,12.65,
+harvest 7 days earlier,price_only,Maharashtra,Solapur,Pandharpur,Other,Unspecified,2025-10-23,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,14.0,1.6,12.15,12.4,12.65,
+harvest 21 days earlier,price_only,Maharashtra,Solapur,Pandharpur,Other,Unspecified,2025-10-09,,500,kg,800,200,200,True,2025-10-30,LAST_OBSERVED,14.0,1.6,12.15,12.4,12.65,
+equivalent quintal quantity,price_only,Maharashtra,Solapur,Pandharpur,Other,Unspecified,2025-10-30,,5,quintal,800,200,200,True,2025-10-30,LAST_OBSERVED,14.0,1.6,12.15,12.4,12.65,
+transport 0,price_only,Maharashtra,Solapur,Pandharpur,Other,Unspecified,2025-10-30,,500,kg,0,200,200,True,2025-10-30,LAST_OBSERVED,14.0,0.0,13.75,14.0,14.25,
+transport 1600,price_only,Maharashtra,Solapur,Pandharpur,Other,Unspecified,2025-10-30,,500,kg,1600,200,200,True,2025-10-30,LAST_OBSERVED,14.0,3.2,10.55,10.8,11.05,
+rejected harvest_date,price_only,Maharashtra,Solapur,Pandharpur,Other,Unspecified,2026-10-23,,500,kg,800,422,422,True,,,,,,,,Historical harvest date must be on or before the forecast origin. No 2026 forecast is available.
+rejected selling_date,price_only,Maharashtra,Solapur,Pandharpur,Other,Unspecified,2025-10-30,2025-10-31,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected selling_date,price_only,Maharashtra,Solapur,Pandharpur,Other,Unspecified,2025-10-30,2026-10-23,500,kg,800,422,422,True,,,,,,,,Price-only forecasts have no known selling date. Clear the calendar-date request and explicitly select the next reporting session.
+rejected harvest_date,price_only,Maharashtra,Solapur,Pandharpur,Other,Unspecified,2025-02-30,,500,kg,800,422,422,True,,,,,,,,Valid harvest and selling dates are required.
+rejected quality,price_only,Maharashtra,Solapur,Pandharpur,Other,Premium,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Select a valid quality grade.
+rejected horizon,price_only,Maharashtra,Solapur,Pandharpur,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Only one subsequent reporting session is supported; no calendar date is assigned.
+rejected acknowledge_stale,price_only,Maharashtra,Solapur,Pandharpur,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Acknowledge the stale observations before running historical analysis.
+market baseline,price_only,Maharashtra,Solapur,Solapur,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 4 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Thane,Kalyan,Other,Unspecified,2025-10-30,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 4 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+market baseline,price_only,Maharashtra,Thane,Murbad,Other,Unspecified,2024-12-13,,500,kg,800,422,422,True,,,,,,,,Insufficient history: latest usable segment has 2 reporting sessions; policy requires 20 (10 training + 5 selection + 5 final evaluation).
+VAR market baseline,var,Karnataka,Davangere,Davangere,Tomato,Unspecified,2024-03-01,2024-03-05,500,kg,800,200,200,True,2024-02-01,VAR_LOG,7.53390851894814,1.6,5.6838999999999995,5.9338999999999995,6.1838999999999995,
+VAR quality A,var,Karnataka,Davangere,Davangere,Tomato,A,2024-03-01,2024-03-05,500,kg,800,200,200,True,2024-02-01,VAR_LOG,7.53390851894814,1.6,5.6838999999999995,5.9338999999999995,6.1838999999999995,
+VAR quality B,var,Karnataka,Davangere,Davangere,Tomato,B,2024-03-01,2024-03-05,500,kg,800,200,200,True,2024-02-01,VAR_LOG,7.53390851894814,1.6,5.6838999999999995,5.9338999999999995,6.1838999999999995,
+VAR quality C,var,Karnataka,Davangere,Davangere,Tomato,C,2024-03-01,2024-03-05,500,kg,800,200,200,True,2024-02-01,VAR_LOG,7.53390851894814,1.6,5.6838999999999995,5.9338999999999995,6.1838999999999995,
+VAR later day same month,var,Karnataka,Davangere,Davangere,Tomato,Unspecified,2024-03-01,2024-03-20,500,kg,800,200,200,True,2024-02-01,VAR_LOG,7.53390851894814,1.6,5.6838999999999995,5.9338999999999995,6.1838999999999995,
+VAR current selling month,var,Karnataka,Davangere,Davangere,Tomato,Unspecified,2024-03-01,2026-10-23,500,kg,800,422,422,True,,,,,,,,"The existing model forecasts only 2024-03, the month after the latest data. A forecast for your selling month requires updated observations or a multi-step model."
+VAR selling before harvest,var,Karnataka,Davangere,Davangere,Tomato,Unspecified,2024-03-01,2024-01-01,500,kg,800,422,422,True,,,,,,,,Selling date must be on or after harvest date.
+VAR market baseline,var,Karnataka,Kolar,Kolar,Tomato,Unspecified,2024-03-01,2024-03-05,500,kg,800,200,200,True,2024-02-01,VAR_LOG,16.758698136216456,1.6,14.9087,15.1587,15.4087,
+VAR quality A,var,Karnataka,Kolar,Kolar,Tomato,A,2024-03-01,2024-03-05,500,kg,800,200,200,True,2024-02-01,VAR_LOG,16.758698136216456,1.6,14.9087,15.1587,15.4087,
+VAR quality B,var,Karnataka,Kolar,Kolar,Tomato,B,2024-03-01,2024-03-05,500,kg,800,200,200,True,2024-02-01,VAR_LOG,16.758698136216456,1.6,14.9087,15.1587,15.4087,
+VAR quality C,var,Karnataka,Kolar,Kolar,Tomato,C,2024-03-01,2024-03-05,500,kg,800,200,200,True,2024-02-01,VAR_LOG,16.758698136216456,1.6,14.9087,15.1587,15.4087,
+VAR later day same month,var,Karnataka,Kolar,Kolar,Tomato,Unspecified,2024-03-01,2024-03-20,500,kg,800,200,200,True,2024-02-01,VAR_LOG,16.758698136216456,1.6,14.9087,15.1587,15.4087,
+VAR current selling month,var,Karnataka,Kolar,Kolar,Tomato,Unspecified,2024-03-01,2026-10-23,500,kg,800,422,422,True,,,,,,,,"The existing model forecasts only 2024-03, the month after the latest data. A forecast for your selling month requires updated observations or a multi-step model."
+VAR selling before harvest,var,Karnataka,Kolar,Kolar,Tomato,Unspecified,2024-03-01,2024-01-01,500,kg,800,422,422,True,,,,,,,,Selling date must be on or after harvest date.
+VAR market baseline,var,Andhra Pradesh,Kurnool,Adoni,Tomato,Unspecified,2010-02-01,2010-02-05,500,kg,800,422,422,True,,,,,,,,53.6% of monthly observations are missing. Maximum allowed is 15.0%.

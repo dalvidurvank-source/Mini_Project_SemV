@@ -1,0 +1,6 @@
+hub_id,hub_name,latitude,longitude,verification_status,source_or_reference,notes
+HUB_NASHIK_KRUSHI_UTPANNA_BAZAR_SAMITI,Nashik Krushi Utpanna Bazar Samiti,20.015063587300105,73.79766078270252,user_supplied_coordinates,User-provided coordinates,Coordinate values preserved exactly as supplied; confirm map pin and entrance before road routing.
+HUB_BHAJIPALA_MARKET,Bhajipala Market (Nashik Market Yard),20.013481345248206,73.79398666927175,user_supplied_coordinates,User-provided coordinates,Coordinate values preserved exactly as supplied; confirm market identity and entrance before road routing.
+HUB_MARKET_YARD_NASHIK,Market Yard Nashik,20.03131322346323,73.79483045015112,user_supplied_coordinates,User-provided coordinates,Coordinate values preserved exactly as supplied; confirm map pin and entrance before road routing.
+HUB_PERFECT_KRUSHI_MARKET,Perfect Krushi Market,20.010853257341047,73.82910182869705,user_supplied_coordinates,User-provided coordinates,Coordinate values preserved exactly as supplied; confirm market identity and entrance before road routing.
+HUB_PIMPALGAON_BASWANT_APMC_OLD,Pimpalgaon Baswant APMC (Old Marketyard),20.166537176732827,73.99529000910276,user_supplied_coordinates,User-provided coordinates,Coordinate values preserved exactly as supplied; confirm map pin and entrance before road routing.
